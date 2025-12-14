@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Dark Mode Theme Variables */
+:root {
+  /* Brand Colors */
+  --brand: #3b82f6;
+  --brand-hover: #2563eb;
+  --brand-light: #60a5fa;
+  
+  /* Background Colors */
+  --bg: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  
+  /* Text Colors */
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  
+  /* Border & Shadow */
+  --border: #334155;
+  --shadow: rgba(0, 0, 0, 0.3);
+  
+  /* Accent Colors */
+  --accent: #8b5cf6;
+  --success: #10b981;
+  --warning: #f59e0b;
+}
+
+/* Custom Components */
+.btn-brand {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: var(--brand);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px var(--shadow);
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--brand);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px var(--shadow);
+}
